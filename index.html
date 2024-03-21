@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(bc.png.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#logo{
+    width: 230px;
+    color: rgb(58, 16, 0);
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+@media (max-with:600px) {
+    #logo{
+        font-size: 12px;
+    }
+    
+}
+
+.menu-bar ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-right:40px ;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(82, 82, 172); */
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 5px 9px;
+    transition:1.5s;
+    border-radius: 6px;
+}
+
+ul li a:hover{
+    background-color: rgb(33, 49, 228);
+    color: rgb(255, 255, 255);
+    /* padding: 5px 15px; */
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div id="logo">  
+                <h2>Nasim Akhtar</h2>
+            </div>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
